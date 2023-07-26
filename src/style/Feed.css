@@ -1,0 +1,23 @@
+.post-feed {
+  display: flex;
+  justify-content: space-around;
+  min-height: 100vh;
+  background-color: rgb(234, 228, 228);
+  gap: 20px;
+}
+
+.left-container {
+  width: 50%;
+}
+.right-container {
+  width: 50%;
+}
+
+@media (max-width: 515px) {
+  .right-container {
+    display: none;
+  }
+  .left-container {
+    width: 90%;
+  }
+}
