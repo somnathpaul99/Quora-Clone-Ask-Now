@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function Quora() {
   const [loginUser, setLoginUser] = useState([]);
-  // console.log("Quara Page", loginUser);
+
   const navigate = useNavigate();
 
   useEffect(() => {
