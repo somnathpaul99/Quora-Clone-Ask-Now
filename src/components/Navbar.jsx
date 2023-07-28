@@ -92,7 +92,7 @@ function Navbar() {
         </div>
 
         {/* {Avatar} */}
-        <div className="nav-avatar ">
+        <div className=" hamburgerMenu">
           <Avatar {...(loginUser ? stringAvatar(loginUser) : {})} />
         </div>
 
@@ -111,6 +111,11 @@ function Navbar() {
           value={searchQuestion}
           onChange={handleSearchChange}
         />
+      </div>
+
+      {/* {Avatar} */}
+      <div className={`${menuOpen ? " mobile-nav-avatar" : "nav-avatar"}`}>
+        <Avatar {...(loginUser ? stringAvatar(loginUser) : {})} />
       </div>
 
       <div className="questionss">

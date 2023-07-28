@@ -32,8 +32,9 @@ const PrevAllAnswer = ({ allAnswer }) => {
 
   useEffect(() => {
     const questionsId = JSON.parse(localStorage.getItem("questionId"));
-    // console.log("checking prev", questionsId);
-    if (questionsId) {
+    console.log("checking prev", questionsId);
+    if (questionsId && Array.isArray(questionsId.answer)) {
+      // checking that questionsId.answer is an array
       const newAnss = questionsId.answer.map((ans) => {
         return {
           newAns: ans.newAns,
@@ -41,6 +42,8 @@ const PrevAllAnswer = ({ allAnswer }) => {
         };
       });
       setPrevAnswer(newAnss);
+    } else {
+      setPrevAnswer([]);
     }
   }, []);
   const answerToDisplay =

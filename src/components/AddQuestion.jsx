@@ -72,6 +72,7 @@ function AddQuestion() {
       JSON.stringify(updatedQuestions)
     );
     qustion.current.value = "";
+    navigate("/");
   };
 
   return (

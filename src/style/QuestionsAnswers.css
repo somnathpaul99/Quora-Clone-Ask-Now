@@ -48,7 +48,7 @@
   font-weight: 200;
   margin: 2px 10px 10px;
   background-color: white;
-  color: rgb(18, 8, 8);
+  color: black;
 }
 
 .love-react {
@@ -103,16 +103,14 @@
     min-width: 100%;
     margin-left: 15px;
   }
-  .name {
-    font-size: 25px;
-  }
+
   .question {
     font-size: 20px;
   }
   .answer {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 2px;
-    color: rgb(81, 0, 0);
+    color: rgba(0, 0, 0, 0.822);
   }
 }
 

@@ -115,10 +115,11 @@ const SignIn = () => {
               </Button>
             </Form>
             <p className="mt-3">
-              Go to Sign Up page{" "}
+              Go to{" "}
               <span>
                 <NavLink to="/register">Sign Up</NavLink>
               </span>{" "}
+              page
             </p>
           </div>
           <SignImg />
