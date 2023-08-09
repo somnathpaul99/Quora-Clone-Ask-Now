@@ -1,9 +1,9 @@
 .question-list-container {
-  margin: 15px;
-  margin-left: 100px;
+  margin: auto;
+  margin-top: 15px;
   box-sizing: border-box;
   overflow-wrap: break-word;
-  width: 70%;
+  width: 80%;
   padding: 15px;
   border: 1px solid lightgray;
   background-color: white;
@@ -24,8 +24,9 @@
 }
 .question-heading {
   font-size: 28px;
-  color: hsl(34, 47%, 62%);
+  color: hsl(34, 56%, 52%);
   text-align: center;
+  font-weight: 500;
 }
 
 @media (max-width: 1036px) {

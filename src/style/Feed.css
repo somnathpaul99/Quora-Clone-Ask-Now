@@ -2,15 +2,17 @@
   display: flex;
   justify-content: space-around;
   min-height: 100vh;
-  background-color: rgb(234, 228, 228);
+  /* background-color: rgb(83 154 203); */
+  /* background-color: rgb(234, 228, 228); */
+  background-color: #f5efe7;
   gap: 20px;
 }
 
 .left-container {
-  width: 50%;
+  width: 65%;
 }
 .right-container {
-  width: 50%;
+  width: 35%;
 }
 
 @media (max-width: 515px) {

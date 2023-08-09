@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Feed from "./Feed";
 import { useNavigate } from "react-router-dom";
+import Footer from "./Footer";
+import "../style/Quora.css";
 
 function Quora() {
   const [loginUser, setLoginUser] = useState([]);
@@ -23,10 +25,11 @@ function Quora() {
   return (
     <>
       {loginUser.length === 0 ? null : (
-        <>
+        <div className="quora-body">
           <Navbar />
           <Feed />
-        </>
+          {/* <Footer /> */}
+        </div>
       )}
     </>
   );

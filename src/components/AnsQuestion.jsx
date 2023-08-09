@@ -32,7 +32,7 @@ const PrevAllAnswer = ({ allAnswer }) => {
 
   useEffect(() => {
     const questionsId = JSON.parse(localStorage.getItem("questionId"));
-    console.log("checking prev", questionsId);
+    // console.log("checking prev", questionsId);
     if (questionsId && Array.isArray(questionsId.answer)) {
       // checking that questionsId.answer is an array
       const newAnss = questionsId.answer.map((ans) => {
@@ -59,8 +59,14 @@ const PrevAllAnswer = ({ allAnswer }) => {
           .map((ele, idx) => (
             <div key={idx}>
               <div className="prev-ans-ansBy">
-                <div className="prev-ans">Answer : {ele.newAns}</div>
-                <div className="prev-ansBy">Answered by : {ele.newAnsBy}</div>
+                <div className="prev-ans">
+                  <span className="span-ans">Answer : </span>
+                  {ele.newAns}
+                </div>
+                <div className="prev-ansBy">
+                  <span className="span-ans">Answered by : </span>
+                  {ele.newAnsBy}
+                </div>
               </div>
             </div>
           ))}
@@ -88,7 +94,7 @@ function AnsQuestion() {
       {loginUser.length === 0 ? (
         <Errror />
       ) : (
-        <>
+        <div className="container-ans-questions">
           <QuoraNav />
           <SelectedQuestion />
           <div className="prvQs-ans">
@@ -100,7 +106,7 @@ function AnsQuestion() {
               <Ans setAllAnswer={setAllAnswer} />
             </div>
           </div>
-        </>
+        </div>
       )}
     </>
   );

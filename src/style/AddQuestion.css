@@ -13,12 +13,16 @@
   margin: auto auto 15px;
 }
 
+.container-add-questions {
+  background-color: #9babb8;
+  min-height: 100vh;
+}
+
 .buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: end;
   gap: 20px;
-  margin-left: 340px;
+  margin-right: 15%;
 }
 
 @media (max-width: 1036px) {

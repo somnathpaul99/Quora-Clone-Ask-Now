@@ -21,16 +21,15 @@ input {
 
 .ans > h3 {
   font-size: 28px;
-  color: hsl(34, 47%, 62%);
+  color: hsl(34, 56%, 52%);
   text-align: center;
   margin-bottom: 10px;
 }
 
 .buttonss {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: end;
+  margin-right: 10%;
 }
 
 @media (max-width: 515px) {

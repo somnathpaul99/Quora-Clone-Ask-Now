@@ -4,7 +4,7 @@
   margin-top: 15px;
   box-sizing: border-box;
   overflow-wrap: break-word;
-  width: 70%;
+  width: 90%;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 5px 8px -3px rgba(0, 0, 0, 0.5);
@@ -84,10 +84,10 @@
   font-weight: 500;
   padding: 5px;
   border-radius: 5px;
-  background-color: hsl(34, 47%, 62%);
+  background-color: brown;
   cursor: pointer;
   font-style: oblique;
-  color: rgba(31, 13, 13, 0.915);
+  color: white;
 }
 
 .ansButton:hover {

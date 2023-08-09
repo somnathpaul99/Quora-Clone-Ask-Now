@@ -112,6 +112,8 @@ function QuestionsAnswers() {
         .filter((question) =>
           question.question.toLowerCase().includes(searchQuestion.toLowerCase())
         )
+        .slice()
+        .reverse()
         .map((ele) => {
           if (ele.answer.length !== 0) {
             return (
@@ -148,7 +150,7 @@ function QuestionsAnswers() {
                       className="ansButton"
                       onClick={() => handleQuestionClick(ele.id)}
                     >
-                      Add more Answer
+                      Add Answer
                     </div>
                   </div>
                 </div>

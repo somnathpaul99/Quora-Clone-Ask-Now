@@ -80,7 +80,7 @@ function AddQuestion() {
       {loginUser.length === 0 ? (
         <Errror />
       ) : (
-        <>
+        <div className="container-add-questions">
           <QuoraNav />
           <div className="input-details">
             <h3>QUESTION : </h3>
@@ -95,7 +95,7 @@ function AddQuestion() {
             <button onClick={handleCancel}>Cancel</button>
             <button onClick={handleAddQuestion}>Add Question</button>
           </div>
-        </>
+        </div>
       )}
     </>
   );

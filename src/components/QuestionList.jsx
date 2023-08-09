@@ -35,13 +35,16 @@ function QuestionList() {
   return (
     <div className="question-list-container">
       <h2 className="question-heading">Questions List</h2>
-      {userQuestion.map((ele) => (
-        <div key={ele.id} onClick={() => handleQuestionClick(ele.id)}>
-          <div className="questions">
-            <Link to={"/add-answer"}>{ele.question}</Link>
+      {userQuestion
+        .slice()
+        .reverse()
+        .map((ele) => (
+          <div key={ele.id} onClick={() => handleQuestionClick(ele.id)}>
+            <div className="questions">
+              <Link to={"/add-answer"}>{ele.question}</Link>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
     </div>
   );
 }
