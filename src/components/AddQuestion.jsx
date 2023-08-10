@@ -83,7 +83,7 @@ function AddQuestion() {
         <div className="container-add-questions">
           <QuoraNav />
           <div className="input-details">
-            <h3>QUESTION : </h3>
+            <h3>Add Qusetion </h3>
             <input
               placeholder="Write your question here....."
               type="text"

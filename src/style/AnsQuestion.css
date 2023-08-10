@@ -52,6 +52,7 @@ h3 {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  text-align: justify;
 }
 
 .prev-ans-container > h2 {

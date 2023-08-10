@@ -19,7 +19,7 @@ const SelectedQuestion = () => {
   return (
     <>
       <div className="selectedQuestion-container">
-        <h2>Selected Question : </h2>
+        {/* <h2>Selected Question : </h2> */}
         <div className="selectedQuestion">{selectedQuestion}</div>
       </div>
     </>
@@ -52,7 +52,7 @@ const PrevAllAnswer = ({ allAnswer }) => {
   return (
     <>
       <div className="prev-ans-container">
-        <h2>Previous all Answer : </h2>
+        <h2>All Answers </h2>
         {answerToDisplay
           .filter((ele) => ele.newAns.trim() !== "")
           .reverse()

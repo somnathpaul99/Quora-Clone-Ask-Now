@@ -66,7 +66,7 @@ function Ans({ setAllAnswer }) {
     <>
       <div>
         <div className="ans">
-          <h3>Add Answer : </h3>
+          <h3>Add Answer </h3>
           <input type="text" placeholder="Type your answer here........" />
         </div>
         <div className="buttonss">

@@ -32,7 +32,8 @@ function stringToColor(string) {
 function stringAvatar(name) {
   return {
     sx: {
-      bgcolor: stringToColor(name),
+      // bgcolor: stringToColor(name),
+      bgcolor: "#EF6262",
     },
     children: `${name.split(" ")[0][0]}${name.split(" ")[1][0]}`,
   };
@@ -113,12 +114,11 @@ function Navbar() {
         />
       </div>
 
-      {/* {Avatar} */}
-      <div className={`${menuOpen ? " mobile-nav-avatar" : "nav-avatar"}`}>
-        <Avatar {...(loginUser ? stringAvatar(loginUser) : {})} />
-      </div>
-
       <div className="questionss">
+        {/* {Avatar} */}
+        <div className={`${menuOpen ? " mobile-nav-avatar" : "nav-avatar"}`}>
+          <Avatar {...(loginUser ? stringAvatar(loginUser) : {})} />
+        </div>
         {/* {Add Question} */}
         <div className="add-qustion mobile">
           <button onClick={handleQuestionClick}>Add questions</button>
